@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/oliviya-s/python-jenkins-docker.git'
+                git branch: 'main', url: 'https://github.com/oliviya-s/python-jenkins-docker.git'
             }
         }
         stage('Build Docker Image') {
